@@ -3,7 +3,7 @@ requires = ["flit_core >=3.2,<4"]
 build-backend = "flit_core.buildapi"
 
 [project]
-name = "moliere"
+name = "molieregen"
 version = "0.1.0"
 description = "Generate invoices and quotes with style."
 license = { text = "GPL-2.0-only" }
@@ -17,7 +17,7 @@ requires-python = ">=3.8"
 readme = "README.md"
 
 [tool.setuptools]
-packages = ["moliere"]
+packages = ["molieregen"]
 
 [project.scripts]
-moliere = "moliere.cli:app"
+molieregen = "molieregen.cli:app"
