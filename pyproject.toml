@@ -1,0 +1,13 @@
+[project]
+name = "moliere"
+version = "0.1.0"
+description = "Generate invoices and quotes with style."
+authors = [{ name = "Caribbean Code", email = "caribbeancodelab.gmail.com" }]
+dependencies = [
+    "typer[all]",
+    "jinja2",
+    "weasyprint"
+]
+
+[project.scripts]
+moliere = "moliere.cli:app"
