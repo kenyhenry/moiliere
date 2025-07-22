@@ -3,7 +3,7 @@ import datetime
 import json
 from jinja2 import Environment, FileSystemLoader
 from weasyprint import HTML
-from moliere.config import load_config, update_config_field
+from molieregen.config import load_config, update_config_field
 import shlex
 
 TEMPLATE_JSON = {

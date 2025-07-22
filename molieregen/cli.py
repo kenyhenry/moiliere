@@ -1,6 +1,6 @@
 import typer
-from moliere.generator import generate_invoice_from_json, generate_template_json
-from moliere.config import load_config, change_config, update_config_field
+from molieregen.generator import generate_invoice_from_json, generate_template_json
+from molieregen.config import load_config, change_config, update_config_field
 
 app = typer.Typer(
     help="📦 Molière – Generate elegant invoices and quotes from JSON and HTML templates.",

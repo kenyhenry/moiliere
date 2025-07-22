@@ -1,4 +1,4 @@
-from moliere.cli import app
+from molieregen.cli import app
 import typer
 
 if __name__ == "__main__":
