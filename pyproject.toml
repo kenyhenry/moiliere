@@ -4,7 +4,7 @@ build-backend = "flit_core.buildapi"
 
 [project]
 name = "molieregen"
-version = "0.1.1"
+version = "0.1.2"
 description = "Generate invoices and quotes with style."
 license = { text = "GPL-2.0-only" }
 authors = [{ name = "Caribbean Code", email = "caribbeancodelab@gmail.com" }]
