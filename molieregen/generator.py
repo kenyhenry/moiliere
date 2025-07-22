@@ -28,7 +28,7 @@ def get_invoice_number(type):
 
 def generate_template_json(out_path: str = None):
     if out_path is None:
-        out_path = os.path.join(os.getcwd(), "moliere.json")
+        out_path = os.path.join(os.getcwd(), "molieregen.json")
     
     out_path = os.path.abspath(out_path)
     os.makedirs(os.path.dirname(out_path), exist_ok=True)

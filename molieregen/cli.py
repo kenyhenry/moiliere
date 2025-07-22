@@ -9,7 +9,7 @@ app = typer.Typer(
 
 @app.command()
 def configure():
-    """Configure moliere's default paths"""
+    """Configure molieregen's default paths"""
     change_config()
 
 @app.command()
@@ -26,7 +26,7 @@ def json():
 @app.command("set-config")
 def set_config(field: str, value: str):
     """
-    🔧 Update a single config field in ~/.moliere/config.json
+    🔧 Update a single config field in ~/.molieregen/config.json
     """
     # config = load_config()
     # if field not in config:

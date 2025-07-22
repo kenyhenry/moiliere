@@ -22,7 +22,7 @@ Molière is a simple but powerful CLI tool for developers, freelancers, and smal
 Install via PyPI:
 
 ```
-pip install moliere
+pip install molieregen
 ```
 
 ---
@@ -30,7 +30,7 @@ pip install moliere
 ## 📖 Usage
 
 ```
-moliere [OPTIONS] COMMAND [ARGS]...
+molieregen [OPTIONS] COMMAND [ARGS]...
 ```
 
 ### Global Options
@@ -50,10 +50,10 @@ moliere [OPTIONS] COMMAND [ARGS]...
 Interactively configure default paths and values.
 
 ```
-moliere configure
+molieregen configure
 ```
 
-This creates or updates the config file at `~/.moliere/config.json`.
+This creates or updates the config file at `~/.molieregen/config.json`.
 
 ---
 
@@ -62,7 +62,7 @@ This creates or updates the config file at `~/.moliere/config.json`.
 Generate a PDF invoice or quote from a JSON file.
 
 ```
-moliere generate ./invoice.json
+molieregen generate ./invoice.json
 ```
 
 The output will be saved to the configured `output_dir`.
@@ -74,8 +74,8 @@ The output will be saved to the configured `output_dir`.
 Generate a default JSON structure for an invoice or quote.
 
 ```
-moliere json invoice > invoice.json
-moliere json quote > quote.json
+molieregen json invoice > invoice.json
+molieregen json quote > quote.json
 ```
 
 Use this as a starting point and customize the fields as needed.
@@ -87,11 +87,11 @@ Use this as a starting point and customize the fields as needed.
 Update a single configuration value directly.
 
 ```
-moliere set-config template_dir ./my-templates
-moliere set-config output_dir ./exports
+molieregen set-config template_dir ./my-templates
+molieregen set-config output_dir ./exports
 ```
 
-This modifies the `~/.moliere/config.json` file.
+This modifies the `~/.molieregen/config.json` file.
 
 ---
 
@@ -99,14 +99,14 @@ This modifies the `~/.moliere/config.json` file.
 
 1. Create a base invoice:
     ```
-    moliere json invoice > invoice.json
+    molieregen json invoice > invoice.json
     ```
 
 2. Edit `invoice.json` to reflect your client, services, pricing, etc.
 
 3. Generate the PDF:
     ```
-    moliere generate invoice.json
+    molieregen generate invoice.json
     ```
 
 4. Find the output in your configured output directory.
@@ -120,7 +120,7 @@ Templates are standard HTML files with placeholders for data.
 - Default templates are included with Molière  
 - You can override by setting a custom template path:
     ```
-    moliere set-config template_path ./custom_template.html
+    molieregen set-config template_path ./custom_template.html
     ```
 
 Template files can use basic CSS and HTML along with variables like:
@@ -137,7 +137,7 @@ Template files can use basic CSS and HTML along with variables like:
 Molière stores user preferences in:
 
 ```
-~/.moliere/config.json
+~/.molieregen/config.json
 ```
 
 Example:
