@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+moliere/__init__.py
+moliere/cli.py
+moliere/config.py
+moliere/generator.py
+moliere.egg-info/PKG-INFO
+moliere.egg-info/SOURCES.txt
+moliere.egg-info/dependency_links.txt
+moliere.egg-info/entry_points.txt
+moliere.egg-info/requires.txt
+moliere.egg-info/top_level.txt

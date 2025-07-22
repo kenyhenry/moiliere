@@ -55,3 +55,4 @@ def update_config_field(field: str, value):
 
     with open(CONFIG_PATH, "w") as f:
         json.dump(config, f, indent=2)
+    print(f"✅ Updated '{field}' to: {value}")

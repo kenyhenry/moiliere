@@ -2,7 +2,10 @@ import typer
 from moliere.generator import generate_invoice_from_json, generate_template_json
 from moliere.config import load_config, change_config, update_config_field
 
-app = typer.Typer(help="📦 Molière – Generate elegant invoices and quotes from JSON and HTML templates.")
+app = typer.Typer(
+    help="📦 Molière – Generate elegant invoices and quotes from JSON and HTML templates.",
+    no_args_is_help=True
+)
 
 @app.command()
 def configure():
@@ -25,14 +28,10 @@ def set_config(field: str, value: str):
     """
     🔧 Update a single config field in ~/.moliere/config.json
     """
-    config = load_config()
-    if field not in config:
-        typer.echo(f"❌ Unknown field: {field}")
-        typer.echo(f"📝 Available fields: {', '.join(config.keys())}")
-        raise typer.Exit(1)
+    # config = load_config()
+    # if field not in config:
+    #     typer.echo(f"❌ Unknown field: {field}")
+    #     typer.echo(f"📝 Available fields: {', '.join(config.keys())}")
+    #     raise typer.Exit(1)
 
     update_config_field(field, value)
-    typer.echo(f"✅ Updated '{field}' to: {value}")
-
-if __name__ == "__main__":
-    app()

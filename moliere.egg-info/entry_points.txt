@@ -1,0 +1,2 @@
+[console_scripts]
+moliere = moliere.cli:app

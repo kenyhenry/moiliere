@@ -1,0 +1,10 @@
+Metadata-Version: 2.4
+Name: moliere
+Version: 0.1.0
+Summary: Generate invoices and quotes with style.
+Author-email: Caribbean Code <caribbeancodelab@gmail.com>
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: typer[all]
+Requires-Dist: jinja2
+Requires-Dist: weasyprint

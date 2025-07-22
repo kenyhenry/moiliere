@@ -1,13 +1,22 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
 [project]
 name = "moliere"
 version = "0.1.0"
 description = "Generate invoices and quotes with style."
-authors = [{ name = "Caribbean Code", email = "caribbeancodelab.gmail.com" }]
+authors = [{ name = "Caribbean Code", email = "caribbeancodelab@gmail.com" }]
 dependencies = [
     "typer[all]",
     "jinja2",
     "weasyprint"
 ]
+requires-python = ">=3.8"
+readme = "README.md"
+
+[tool.setuptools]
+packages = ["moliere"]
 
 [project.scripts]
 moliere = "moliere.cli:app"
